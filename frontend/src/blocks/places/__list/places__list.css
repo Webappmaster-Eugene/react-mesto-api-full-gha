@@ -1,0 +1,24 @@
+.places__list{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 17px;
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    max-width: 880px;
+    box-sizing: border-box;
+}
+
+/* @media screen and (max-width: 1172px) {
+    .places__list{
+        justify-content: space-evenly;
+    }
+} */
+
+@media screen and (max-width: 675px) {
+    .places__list{
+        justify-content: center;
+    }
+}

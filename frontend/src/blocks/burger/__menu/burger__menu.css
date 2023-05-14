@@ -1,0 +1,10 @@
+.burger__menu {
+    display: none;
+}
+
+@media screen and (max-width: 549px){
+    .burger__menu {
+        display: flex;
+        position: relative;
+    }
+}

@@ -1,0 +1,15 @@
+.profile__pen{
+    max-width: 10px;
+    max-height: 10px;
+}
+
+.profile__pen:hover{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 631px) {
+    .profile__pen{
+        max-width: 8px;
+        max-height: 8px;
+    }
+}

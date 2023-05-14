@@ -1,0 +1,13 @@
+.sign{
+    display: flex;
+    flex-direction: column;
+    max-width: 358px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+@media screen and (max-width: 549px){
+    .sign{
+        max-width: 260px;
+    }
+}

@@ -1,0 +1,120 @@
+/* Основной файл .css для сборки всех других стилей - импорт normilize, шрифтов, других стилей */
+@import url('./vendor/normalize.css');
+@import url('./vendor/fonts/fonts.css');
+
+/* стили для основного контента*/
+@import url('./blocks/html/html.css');
+@import url('./blocks/page/page.css');
+@import url('./blocks/content/content.css');
+
+/* стили для лого*/
+@import url('./blocks/logo/logo.css');
+@import url('./blocks/logo/__image/logo__image.css');
+
+/* стили для лого с авторизацией*/
+@import url('./blocks/logo/__info/logo__info.css');
+@import url('./blocks/logo/__profile/logo__profile.css');
+@import url('./blocks/logo/__sign/logo__sign.css');
+@import url('./blocks/logo/__sign/_signed/logo__sign_signed.css');
+
+/* стили для хэдэра*/
+@import url('./blocks/header/header.css');
+
+/* стили для хэдера с авторизацией*/
+@import url('./blocks/header/__block-signed-in/header__block-signed-in.css');
+@import url('./blocks/header/__inner-block-signed/header__inner-block-signed.css');
+@import url('./blocks/header/__block-signed-in/__block-signed-in_mobile/header__block-signed-in_mobile.css');
+@import url('./blocks/header/__profile/header__profile.css');
+@import url('./blocks/header/__sign/header__sign.css');
+@import url('./blocks/header/__inner-block-signed-mobile/header__inner-block-signed-mobile.css');
+@import url('./blocks/header/__inner-block-signed-mobile/__inner-block-signed-mobile_visible/header__inner-block-signed-mobile_visible.css');
+
+/* стили для футера*/
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__copyright/footer__copyright.css');
+
+/* стили для всего блока places*/
+@import url('./blocks/places/places.css');
+@import url('./blocks/places/__list/places__list.css');
+
+/* стили для карточки place*/
+@import url('./blocks/place/place.css');
+@import url('./blocks/place/__photo/place__photo.css');
+@import url('./blocks/place/__photo/place__photo.css');
+@import url('./blocks/place/__info/place__info.css');
+@import url('./blocks/place/__like-container/place__like-container.css');
+@import url('./blocks/place/__like-count/place__like-count.css');
+@import url('./blocks/place/__like/place__like.css');
+@import url('./blocks/place/__like/_active/place__like_active.css');
+@import url('./blocks/place/__name/place__name.css');
+@import url('./blocks/place/__delete/place__delete.css');
+
+/* стили для всех попапов */
+@import url('./blocks/popup/popup.css');
+@import url('./blocks/popup/__container/popup__container.css');
+@import url('./blocks/popup/__container/_place/popup__container_place.css');
+@import url('./blocks/popup/__photo/popup__photo.css');
+@import url('./blocks/popup/__description/popup__description.css');
+@import url('./blocks/popup/__close/popup___close.css');
+@import url('./blocks/popup/__header/popup__header.css');
+@import url('./blocks/popup/__header/_sure/popup__header_sure.css');
+@import url('./blocks/popup/__input/popup__input.css');
+@import url('./blocks/popup/__input-error/popup__input-error.css');
+@import url('./blocks/popup/__input-error/_active/popup__input-error_active.css');
+@import url('./blocks/popup/__button/_disabled/popup__button_disabled.css');
+@import url('./blocks/popup/__button/popup__button.css');
+@import url('./blocks/popup/__input/_error/popup__input_error.css');
+@import url('./blocks/popup/__inputs/popup__inputs.css');
+@import url('./blocks/popup/_type/popup_type_place.css');
+@import url('./blocks/popup/_opened/popup_opened.css');
+
+/* стили для нового попапа с авторизацией */
+@import url('./blocks/popup/__authorize-description/popup__authorize-description.css');
+@import url('./blocks/popup/__authorize-image/popup__authorize-image.css');
+
+/* стили для блока профиля */
+@import url('./blocks/profile/profile.css');
+@import url('./blocks/profile/__avatar-container/profile__avatar-container.css');
+@import url('./blocks/profile/__avatar/profile__avatar.css');
+@import url('./blocks/profile/__avatar-changer/profile__avatar-changer.css');
+@import url('./blocks/profile/__changer/profile__changer.css');
+@import url('./blocks/profile/__info/profile__info.css');
+@import url('./blocks/profile/__name/profile__name.css');
+@import url('./blocks/profile/__plus/profile__plus.css');
+@import url('./blocks/profile/__status/profile__status.css');
+@import url('./blocks/profile/__top-row/profile__top-row.css');
+@import url('./blocks/profile/__pen/profile__pen.css');
+@import url('./blocks/profile/__new-post-add/profile__new-post-add.css');
+
+/* новые стили блоков для авторизации */
+/* стили бургер-меню */
+@import url('./blocks/burger/burger.css');
+@import url('./blocks/burger/burger_visible/burger_visible.css');
+@import url('./blocks/burger/__close/burger__close.css');
+@import url('./blocks/burger/__close/_visible/burger__close_visible.css');
+@import url('./blocks/burger/__menu/burger__menu.css');
+
+/* стили ошибки 404 */
+@import url('./blocks/error404/error404.css');
+@import url('./blocks/error404/__header/error404__header.css');
+
+/* стили нижней части хэдера (то есть без раскрывающегося меню бургера, только старый хэдер */
+@import url('./blocks/header-section/header-section.css');
+@import url('./blocks/header-section/_signed/header-section_signed.css');
+
+/* стили самой главной формы входа\авторизации на странице логина - основной блок*/
+@import url('./blocks/sign-block/sign-block.css');
+
+/* внутренний блок формы с инпутами и кнопкой */
+@import url('./blocks/sign/sign.css');
+@import url('./blocks/sign/__header/sign__header.css');
+@import url('./blocks/sign/__form/sign__form.css');
+@import url('./blocks/sign/__inputs/sign__inputs.css');
+@import url('./blocks/sign/__input/sign__input.css');
+@import url('./blocks/sign/__button-group/sign__button-group.css');
+@import url('./blocks/sign/__button/sign__button.css');
+@import url('./blocks/sign/__bottom-text/sign__bottom-text.css');
+
+/* стили для лоадера страницы*/
+@import url('./blocks/background-loader/background-loader.css');
+@import url('./blocks/loader/loader.css');

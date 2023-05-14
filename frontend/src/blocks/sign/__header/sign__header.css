@@ -1,0 +1,18 @@
+.sign__header{
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding-bottom: 47px;
+    padding-top: 24px;
+    line-height: 29px;
+    font-weight: 900;
+}
+
+@media screen and (max-width: 549px){
+    .sign__header {
+        padding-top: 2px;
+        padding-bottom: 27px;
+        line-height: 24px;
+        font-size: 20px;
+    }
+}

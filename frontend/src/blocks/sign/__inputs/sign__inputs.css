@@ -1,0 +1,13 @@
+.sign__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    width: 100%;
+    margin-bottom: 216px;
+}
+
+@media screen and (max-width: 549px){
+    .sign__inputs {
+        margin-bottom: 173px;
+    }
+}

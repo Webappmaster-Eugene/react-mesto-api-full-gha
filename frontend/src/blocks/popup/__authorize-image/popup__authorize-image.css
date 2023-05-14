@@ -1,0 +1,13 @@
+.popup__authorize-image{
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 26px 0 32px 0;
+}
+
+@media screen and (max-width: 549px) {
+    .popup__authorize-image{
+        padding: 25px 0 40px 0;
+        max-height: 308px;
+    }
+}

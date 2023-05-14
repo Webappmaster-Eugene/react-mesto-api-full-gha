@@ -1,0 +1,17 @@
+.burger{
+    display: none;
+}
+
+@media screen and (max-width: 549px){
+    .burger{
+        display: flex;
+        flex-direction: column;
+        max-width: 24px;
+        gap: 7px;
+        cursor: pointer;
+        opacity: 0;
+        height: 0;
+        width: 0;
+        transition: opacity 0.7s ease-in-out;
+    }
+}

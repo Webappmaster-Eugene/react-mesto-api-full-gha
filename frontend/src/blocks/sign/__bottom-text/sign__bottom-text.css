@@ -1,0 +1,21 @@
+.sign__bottom-text{
+    text-align: center;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+.sign__bottom-text:hover{
+    cursor: pointer;
+    opacity: .8;
+
+}
+
+@media screen and (max-width: 549px){
+    .sign__bottom-text{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}

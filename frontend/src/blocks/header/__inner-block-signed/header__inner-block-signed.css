@@ -1,0 +1,27 @@
+/* .header__inner-block-signed {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 30px;
+    gap: 18px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 319px) {
+    .header__inner-block-signed {
+        padding: 40px 23px;
+    }
+} */
+
+.header__inner-block-signed {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+    max-width: 100%;
+}
+
+@media screen and (max-width: 549px) {
+    .header__inner-block-signed {
+        display: none;
+    }
+}

@@ -1,0 +1,12 @@
+.header__profile {
+    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    box-sizing: border-box;
+    max-width: 100%;
+}

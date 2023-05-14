@@ -1,0 +1,7 @@
+@media screen and (max-width: 549px) {
+    .header__inner-block-signed-mobile_visible {
+        display: flex;
+        opacity: 1;
+        transition: opacity 0.7s ease-in-out;
+    }    
+}

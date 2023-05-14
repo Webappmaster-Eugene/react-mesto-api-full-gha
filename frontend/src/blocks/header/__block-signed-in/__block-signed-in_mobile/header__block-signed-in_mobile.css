@@ -1,0 +1,11 @@
+.header__block-signed-in_mobile{
+    display: none;
+}
+
+@media screen and (max-width: 549px){
+    .header__block-signed-in_mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,0 +1,35 @@
+.sign__button{
+    min-width: 358px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 2px;
+    min-height: 50px;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+@media screen and (max-width: 549px) {
+    .sign__button{
+        min-width: 260px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}
+
+.sign__button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sign__button:disabled{
+    border: 1px solid rgba(0, 0, 0, 1);
+    background: none;
+    opacity: 0.2;
+    color: black;
+}
