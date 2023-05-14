@@ -1,4 +1,3 @@
-[![Tests](../../actions/workflows/tests-13-sprint.yml/badge.svg)](../../actions/workflows/tests-13-sprint.yml) [![Tests](../../actions/workflows/tests-14-sprint.yml/badge.svg)](../../actions/workflows/tests-14-sprint.yml)
 # Проект Mesto бэкенд-часть (с разработкой API)
 
 ## Директории
@@ -17,4 +16,4 @@
 
 ## Ссылка на репозиторий
 
-https://github.com/
+https://github.com/Numarta/react-mesto-api-full-gha
