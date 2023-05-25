@@ -27,14 +27,8 @@ async function findUser(req, res, userId, next) {
 }
 
 const getUser = async (req, res, next) => {
-  // try {
   const { userId } = req.params;
   findUser(req, res, userId, next);
-  //   const findedUser = await User.findById(userId).orFail();
-  //   return res.status(OK_CODE).send(findedUser);
-  // } catch (err) {
-  //   return next(err);
-  // }
 };
 
 const getUserInfo = async (req, res, next) => {
@@ -76,7 +70,9 @@ const login = async (req, res, next) => {
     res.cookie('jwt', token, {
       maxAge: 3600 * 1000 * 24 * 7,
       httpOnly: true,
-      sameSite: true,
+      secure: true,
+      // sameSite: true,
+      sameSite: 'none',
     });
     return res
       .status(OK_CODE)
