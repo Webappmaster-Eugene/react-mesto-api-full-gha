@@ -84,14 +84,10 @@ const login = async (req, res, next) => {
 
 async function updateUser(id, updateUserInfo, res, next) {
   try {
-    const updatedUser = await User.findByIdAndUpdate(
-      id,
-      updateUserInfo,
-      {
-        new: true,
-        runValidators: true,
-      },
-    ).orFail();
+    const updatedUser = await User.findByIdAndUpdate(id, updateUserInfo, {
+      new: true,
+      runValidators: true,
+    }).orFail();
 
     return res.status(OK_CODE).send(updatedUser);
   } catch (err) {
@@ -100,11 +96,17 @@ async function updateUser(id, updateUserInfo, res, next) {
 }
 
 const updateUserInfo = async (req, res, next) => {
-  updateUser(req.user._id, req.body, res, next);
+  const { _id: userId } = req.user;
+  const { name, about } = req.body;
+
+  updateUser(userId, { name, about }, res, next);
 };
 
 const updateUserAvatar = async (req, res, next) => {
-  updateUser(req.user._id, req.body, res, next);
+  const { _id: userId } = req.user;
+  const { avatar } = req.body;
+
+  updateUser(userId, { avatar }, res, next);
 };
 
 module.exports = {
