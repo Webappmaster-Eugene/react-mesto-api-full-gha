@@ -82,11 +82,10 @@ const login = async (req, res, next) => {
   }
 };
 
-async function updateUser(req, res, next) {
-  const updateUserInfo = req.body;
+async function updateUser(id, updateUserInfo, res, next) {
   try {
     const updatedUser = await User.findByIdAndUpdate(
-      req.user._id,
+      id,
       updateUserInfo,
       {
         new: true,
@@ -101,22 +100,11 @@ async function updateUser(req, res, next) {
 }
 
 const updateUserInfo = async (req, res, next) => {
-  updateUser(req, res, next);
-  // const updateInfo = req.body;
-  // try {
-  //   const updatedUser = await User.findByIdAndUpdate(req.user._id, updateInfo, {
-  //     new: true,
-  //     runValidators: true,
-  //   }).orFail();
-
-  //   return res.status(OK_CODE).send(updatedUser);
-  // } catch (err) {
-  //   return next();
-  // }
+  updateUser(req.user._id, req.body, res, next);
 };
 
 const updateUserAvatar = async (req, res, next) => {
-  updateUser(req, res, next);
+  updateUser(req.user._id, req.body, res, next);
 };
 
 module.exports = {
